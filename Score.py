@@ -7,9 +7,13 @@ Original file is located at
     https://colab.research.google.com/drive/1Y7LTzjlWYcyhkYOsyGnPo4DYbKSTAX16
 """
 
-scores=input().split()
-fail_count=0
+scores = input().split()
+
+numbers = []
+
 for s in scores:
-  if int(s)<60:
-    fail_count+=1
-print(fail_count)
+    numbers.append(int(s))
+
+average = sum(numbers) / len(numbers)
+
+print(average)

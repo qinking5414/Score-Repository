@@ -14,6 +14,9 @@ numbers = []
 for s in scores:
     numbers.append(int(s))
 
+max_score = max(numbers)
+min_score = min(numbers)
 average = sum(numbers) / len(numbers)
 
+print(max_score, min_score)
 print(average)
